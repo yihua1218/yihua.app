@@ -21,3 +21,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
+## Deploy
+
+``` bash
+$ cd dist
+$ aws s3 sync --profile yihua --acl public-read --exclude .DS_Store . s3://yihua.app
+```
