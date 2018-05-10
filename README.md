@@ -1,6 +1,12 @@
-# yihua.app
+# [yihua.app](https://yihua.app/)
 
 The personal application for my daily life.
+
+## Firebase
+
+### Authentication
+
+[Using Firebase Authentication With Nuxt.js](https://www.davidroyer.me/blog/using-firebase-authentication-with-nuxtjs), [DavidRoyer](https://www.davidroyer.me/)
 
 ## Project Initialization
 
