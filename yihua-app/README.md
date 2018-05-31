@@ -22,6 +22,22 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+## Bootstrap
+
+``` bash
+$ yarn add bootstrap-vue
+```
+
+## Pre-processors
+
+``` bash
+$ yarn add pug pug-loader coffeescript coffee-loader node-sass sass-loader
+```
+
+## Social Buttons for Bootstrap
+
+[Social Buttons for Bootstrap](https://lipis.github.io/bootstrap-social/)
+
 ## Deploy
 
 ``` bash

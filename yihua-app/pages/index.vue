@@ -1,9 +1,10 @@
 <template>
   <section class="container">
     <div>
+      <main-menu/>
       <logo/>
       <h1 class="title">
-        NUXT
+        Yi-Hua App
       </h1>
       <h2 class="subtitle">
         PWA Vue.js Application
@@ -13,6 +14,7 @@
         {{ online ? 'online' : 'offline' }}
       </div>
       <div class="links">
+        <login/>
         <a href="https://nuxtjs.org/" target="_blank" class="button--green" rel="noopener">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey" rel="noopener">GitHub</a>
       </div>
@@ -22,9 +24,15 @@
 
 <script>
   import Logo from '~/components/Logo.vue'
+  import MainMenu from '~/components/MainMenu.vue'
+  import Login from '~/components/Login.vue'
 
   export default {
-    components: {Logo},
+    components: {
+      Logo,
+      MainMenu,
+      Login,
+      },
     data () {
       return {
         online: true
