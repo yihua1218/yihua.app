@@ -7,7 +7,11 @@ module.exports = {
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
-  head: {},
+  head: {
+    css: [
+      '@/assets/css/bootstrap-social.css'
+    ]
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -23,6 +27,14 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt'
-  ]
+    'bootstrap-vue/nuxt',
+    'nuxt-fontawesome'
+  ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/fontawesome-free-solid'
+      }
+    ]
+  }
 }

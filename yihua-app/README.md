@@ -34,9 +34,20 @@ $ yarn add bootstrap-vue
 $ yarn add pug pug-loader coffeescript coffee-loader node-sass sass-loader
 ```
 
+## Install nuxt-fontawesome
+
+``` bash
+$ yarn add nuxt-fontawesome
+$ yarn add @fortawesome/fontawesome-free-solid
+```
+
 ## Social Buttons for Bootstrap
 
 [Social Buttons for Bootstrap](https://lipis.github.io/bootstrap-social/)
+
+``` bash
+$ yarn add bootstrap-social
+```
 
 ## Deploy
 
@@ -44,3 +55,8 @@ $ yarn add pug pug-loader coffeescript coffee-loader node-sass sass-loader
 $ cd dist
 $ aws s3 sync --profile yihua --acl public-read --exclude .DS_Store . s3://yihua.app
 ```
+
+## Reference
+
+1. [Authentication module for Nuxt.js](https://github.com/nuxt-community/auth-module)
+2. [nuxt-passport-facebook-authentication](https://github.com/tomgreener/nuxt-passport-facebook-authentication)
