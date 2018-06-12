@@ -28,6 +28,25 @@ The personal application for my daily life.
 2. 資料關聯
 3. 投票限制設計
 
+``` bash
+$ aws --region ap-northeast-1 --profile yihua \
+dynamodb create-table --table-name votes \
+--key-schema AttributeName=event_id,KeyType=HASH \
+--key-schema AttributeName=user_id,KeyType=RANGE \
+--attribute-definitions 
+```
+
+Key | Usage
+-|-
+event_id | Vote Event ID
+user_id | Search Key: IPv4 Address or User ID
+birthtime | Time of entry creation
+mtimes | Time of last data modification
+
+### API Document
+
+[YiHua App 1.0.0](https://app.swaggerhub.com/apis/yihua1218/yihua.app/1.0.0)
+
 ## Firebase
 
 ### Authentication
