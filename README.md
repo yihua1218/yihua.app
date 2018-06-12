@@ -31,9 +31,13 @@ The personal application for my daily life.
 ``` bash
 $ aws --region ap-northeast-1 --profile yihua \
 dynamodb create-table --table-name votes \
---key-schema AttributeName=event_id,KeyType=HASH \
---key-schema AttributeName=user_id,KeyType=RANGE \
---attribute-definitions 
+--attribute-definitions \
+  AttributeName=event_id,AttributeType=S \
+  AttributeName=user_id,AttributeType=S \
+--key-schema \
+  AttributeName=event_id,KeyType=HASH \
+  AttributeName=user_id,KeyType=RANGE \
+--provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 ```
 
 Key | Usage
