@@ -28,6 +28,11 @@ The personal application for my daily life.
 2. 資料關聯
 3. 投票限制設計
 
+
+#### votes Table
+
+投票紀錄資料表
+
 ``` bash
 $ aws --region ap-northeast-1 --profile yihua \
 dynamodb create-table --table-name votes \
@@ -46,6 +51,10 @@ event_id | Vote Event ID
 user_id | Search Key: IPv4 Address or User ID
 birthtime | Time of entry creation
 mtimes | Time of last data modification
+
+#### vote-events Table
+
+投票事件資料表
 
 ### API Document
 
