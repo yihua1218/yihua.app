@@ -76,9 +76,37 @@ $ yarn
 $ yarn dev
 ```
 
+### Visual Studio Code launch.json for Mac OS
+
+``` json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "YiHua.App",
+      "runtimeExecutable": "node",
+      "cwd": "${workspaceFolder}/yihua-app/",
+      "program": "${workspaceFolder}/yihua-app/node_modules/.bin/nuxt",
+      "protocol": "inspector",
+      "outputCapture": "std",
+      "args": [
+        "-p",
+        "3015"
+      ]
+    }
+  ]
+}
+```
+
 ## Reference
 
 1. [Using the Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API), [MDN](https://developer.mozilla.org/en-US/)
 2. [Notification](https://developer.mozilla.org/zh-TW/docs/Web/API/notification), [MDN](https://developer.mozilla.org/en-US/)
 3. [Nuxt.js API Example using Vuex and axios](https://github.com/davidroyer/nuxt-api-example)
 4. [Authentication module for Nuxt.js](https://github.com/nuxt-community/auth-module)
+5. [Debugging Nuxt.js with Visual Studio Code](https://codeburst.io/debugging-nuxt-js-with-visual-studio-code-724920140b8f)
