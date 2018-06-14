@@ -1,0 +1,11 @@
+{
+  "name": "yihua.app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:yihua1218/yihua.app.git",
+  "author": "Yi-Hua Liang <yihua1218@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
+}
