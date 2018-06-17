@@ -1,6 +1,24 @@
-<template lang="pug">
-  section.container
-    | 你沒有看錯，這裡真的空空的。
+<template>
+  <section class="container">
+    <div>
+      <logo/>
+      <h1 class="title">
+        Yi-Hua App
+      </h1>
+      <h2 class="subtitle">
+        PWA Vue.js Application
+      </h2>
+      <div :class="['network',online ? 'online' : 'offline']">
+        <div class="circle"></div>
+        {{ online ? 'online' : 'offline' }}
+      </div>
+      <div class="links">
+        <a href="/gallery" class="button--green" rel="noopener">Gallery</a>
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green" rel="noopener">Documentation</a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

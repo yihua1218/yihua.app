@@ -60,3 +60,4 @@ $ aws s3 sync --profile yihua --acl public-read --exclude .DS_Store . s3://yihua
 
 1. [Authentication module for Nuxt.js](https://github.com/nuxt-community/auth-module)
 2. [nuxt-passport-facebook-authentication](https://github.com/tomgreener/nuxt-passport-facebook-authentication)
+3. [bootstrap-vue](https://bootstrap-vue.js.org/docs/)
