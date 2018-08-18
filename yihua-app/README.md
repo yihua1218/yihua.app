@@ -2,6 +2,12 @@
 
 > Yi-Hua's App for personal life.
 
+## Vue UI
+
+``` bash
+$ vue ui
+```
+
 ## Build Setup
 
 ``` bash
