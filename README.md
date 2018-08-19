@@ -2,7 +2,21 @@
 
 The personal application for my daily life.
 
+## Day 0
+
+第 0 日，就必須要有的功能，帳號驗證和安全的授權分類與機制。
+
 ## 想做的功能
+
+將各種第三方登入，都整合進來。每天幫自己汲取各個平台上的資訊並且分類，方便閱讀和整理。
+
+### AWS / Azure / GCP Cloud tools
+
+日常中，有許多個 AWS, Azure 和 GCP 需要操作使用。想要有一個工具，能夠簡化自己每天在 CLI 中下指令處理的各種工作項目。所以先需要能夠管理 .pem 和各個平台的 Access Key 和 Secret。紀錄各個不同的身份，和所需要操作的每日工作項目。
+
+#### AWS
+
+AWS 帳號的環境設定和 Credentials 存放在 ~/.aws 目錄下。
 
 ### 各種儀表板
 
@@ -13,6 +27,16 @@ The personal application for my daily life.
 5. 財務: 電子發票、電子帳單、帳戶...
 6. 投票: 投票或意見調查
 7. 書籤、短址： goo.gl
+
+## 機器人
+
+對話機器人，協助自己處理日常重複性的規律性工作項目。想要投放機器人的介面和媒體：
+
+1. Line
+2. Skype
+3. Facebook Messenger
+4. Microsoft Team
+5. Slack
 
 ## Vote System
 
@@ -27,7 +51,6 @@ The personal application for my daily life.
 1. 使用何種資料模型
 2. 資料關聯
 3. 投票限制設計
-
 
 #### votes Table
 
