@@ -1,40 +1,83 @@
+const pkg = require('./package')
+
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
+  mode: 'universal',
+
   /*
-  ** Build configuration
-  */
-  build: {},
-  /*
-  ** Headers
-  ** Common headers are already provided by @nuxtjs/pwa preset
+  ** Headers of the page
   */
   head: {
-    css: [
-      '@/assets/css/bootstrap-social.css'
+    title: pkg.name,
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: pkg.description }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#FFFFFF' },
+
   /*
-  ** Customize app manifest
+  ** Global CSS
   */
-  manifest: {
-    theme_color: '#3B8070'
-  },
+  css: [
+    'vuetify/src/stylus/main.styl'
+  ],
+
   /*
-  ** Modules
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    '@/plugins/vuetify'
+  ],
+
+  /*
+  ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt',
-    'nuxt-fontawesome'
+    // Doc: https://github.com/nuxt-community/axios-module#usage
+    '@nuxtjs/axios'
   ],
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/fontawesome-free-solid'
+  /*
+  ** Axios module configuration
+  */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  /*
+  ** Build configuration
+  */
+  build: {
+    /*
+    ** You can extend webpack config here
+    */
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
       }
-    ]
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/^vuetify/]
+          })
+        ]
+      }
+    }
   }
 }

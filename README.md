@@ -2,6 +2,8 @@
 
 The personal application for my daily life.
 
+是本地端工具，也是網站。
+
 ## Day 0
 
 第 0 日，就必須要有的功能，帳號驗證和安全的授權分類與機制。
@@ -9,6 +11,10 @@ The personal application for my daily life.
 ## 想做的功能
 
 將各種第三方登入，都整合進來。每天幫自己汲取各個平台上的資訊並且分類，方便閱讀和整理。
+
+### Daily Log
+
+喃喃自語碎碎念的雜記本
 
 ### AWS / Azure / GCP Cloud tools
 
@@ -92,11 +98,37 @@ mtimes | Time of last data modification
 ## Project Initialization
 
 ``` bash
-$ nvm use stable
-$ vue init nuxt-community/pwa-template yihua-app
-$ cd yihua-app
-$ yarn
-$ yarn dev
+$ npx create-nuxt-app yihua-app
+npx: 413 安裝成功，花費 15.705 秒
+> Generating Nuxt.js project in /Users/yihua/github/yihua1218/yihua.app/yihua-app
+? Project name yihua-app
+? Project description YiHua.App
+? Use a custom server framework feathers
+? Use a custom UI framework vuetify
+? Choose rendering mode Universal
+? Use axios module yes
+? Use eslint yes
+? Author name Yi-Hua Liang
+? Choose a package manager yarn
+Initialized empty Git repository in /Users/yihua/github/yihua1218/yihua.app/yihua-app/.git/
+yarn install v1.7.0
+info No lockfile found.
+[1/4] 🔍  Resolving packages...
+...
+[4/4] 📃  Building fresh packages...
+success Saved lockfile.
+✨  Done in 16.94s.
+
+  To get started:
+
+    cd yihua-app
+    npm run dev
+
+  To build & start for production:
+
+    cd yihua-app
+    npm run build
+    npm start
 ```
 
 ### Visual Studio Code launch.json for Mac OS
