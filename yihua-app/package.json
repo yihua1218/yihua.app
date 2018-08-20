@@ -19,6 +19,7 @@
     "nuxt": "^1.0.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
+    "vue-goodshare": "^0.9.3",
     "vuetify": "^1.0.19"
   },
   "devDependencies": {

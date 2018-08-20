@@ -25,4 +25,20 @@
           v-icon thumb_up
         v-btn(flat='', icon='', color='red lighten-2')
           v-icon thumb_down
+      div
+        component(:is="goodshare")
 </template>
+
+<script>
+export default {
+  data: () => ({
+    'goodshare': ''
+  }),
+  components: {
+    VueGoodshare: () => import('vue-goodshare')
+  },
+  mounted() {
+    this.goodshare = 'VueGoodshare'
+  }
+}
+</script>
