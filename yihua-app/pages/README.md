@@ -5,6 +5,7 @@ The framework reads all the `*.vue` files inside this directory and create the r
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/routing).
 
-## Reference
+## Icons
 
 1. [vue-goodshare](https://koddr.github.io/vue-goodshare/en/)
+2. [Vuetify Icons](https://vuetifyjs.com/en/framework/icons)
