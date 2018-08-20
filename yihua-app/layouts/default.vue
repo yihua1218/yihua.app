@@ -87,13 +87,19 @@
         drawer: true,
         fixed: false,
         items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+          { icon: 'dashboard', title: 'Dashboard', to: '/' },
+          { icon: 'apps', title: 'Functions', to: '/functions' },
+          { icon: 'info', title: 'Serial Port', to: '/serialport' },
+          { icon: 'history', title: 'Daily Log', to: '/dailylog' },
+          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
+          { icon: 'info', title: 'Icons', to: '/icons' },
+          { icon: 'info', title: 'Components', to: '/components' },
+          { icon: 'settings', title: 'Settings', to: '/settings' }
         ],
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'Vuetify.js'
+        title: 'YiHua.App'
       }
     }
   }
