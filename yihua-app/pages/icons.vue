@@ -26,7 +26,11 @@
         v-btn(flat='', icon='', color='red lighten-2')
           v-icon thumb_down
       div
+        h2 Good Share
         component(:is="goodshare")
+      div
+        h2 Font Awesome 5
+        v-icon fa-search
 </template>
 
 <script>

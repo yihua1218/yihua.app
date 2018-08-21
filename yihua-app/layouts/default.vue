@@ -70,11 +70,10 @@
           { icon: 'apps', title: 'Functions', to: '/functions' },
           { icon: 'info', title: 'Serial Port', to: '/serialport' },
           { icon: 'history', title: 'Daily Log', to: '/dailylog' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-          { icon: 'info', title: 'Icons', to: '/icons' },
-          { icon: 'info', title: 'Components', to: '/components' },
+          { icon: 'build', title: 'Utilities', to: '/utilities' },
           { icon: 'settings', title: 'Settings', to: '/settings' },
-          { icon: 'account_circle', title: 'Accounts', to: '/accounts' }
+          { icon: 'account_circle', title: 'Accounts', to: '/accounts' },
+          { icon: 'contact_support', title: 'About', to: '/about' }
         ],
         miniVariant: false,
         right: true,
