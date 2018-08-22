@@ -78,8 +78,22 @@
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'YiHua.App'
+        title: 'YiHua.App',
+        isFBReady: false
       }
+    },
+    mounted: function () {
+        this.isFBReady = Vue.FB != undefined
+        window.addEventListener('fb-sdk-ready', this.onFBReady)
+    },
+    beforeDestroy: function () {
+        window.removeEventListener('fb-sdk-ready', this.onFBReady)
+    },
+    methods: {
+        onFBReady: function () {
+          console.log('Facebook SDK ready.');
+          this.isFBReady = true
+        }
     }
   }
 </script>

@@ -158,6 +158,13 @@ success Saved lockfile.
 }
 ```
 
+## 想要玩看看和增添的工具
+
+1. [A VPN system over websockets](https://github.com/unbit/vpn-ws)
+2. [JSLinux](https://bellard.org/jslinux/index.html)
+3. [Virtual File Synchronization](https://vfsync.org/)\
+4. [Bash script to tail Kubernetes logs from multiple pods at the same time](https://github.com/johanhaleby/kubetail)
+
 ## Reference
 
 1. [Vuetify](https://vuetifyjs.com/en/)
