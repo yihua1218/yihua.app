@@ -158,6 +158,12 @@ success Saved lockfile.
 }
 ```
 
+## Todo
+
+1. 把每天收到的 104 配對履歷，整理到 Micorosft Teams 裡頭的 HR 群組
+2. 增加兩步驟驗證的機制
+3. 用 [mermaid](https://github.com/knsv/mermaid) 繪製流程圖
+
 ## 想要玩看看和增添的工具
 
 1. [A VPN system over websockets](https://github.com/unbit/vpn-ws)
